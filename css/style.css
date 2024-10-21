@@ -1,0 +1,296 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(54, 54, 54);
+    /* background: -webkit-linear-gradient(left, rgb(239, 239, 255), rgb(169, 169, 245), rgb(97, 97, 255), rgb(169, 169, 245), rgb(239, 239, 255)); */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+/* Header........................................................ */
+
+.navigation {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+
+    background-color: aqua;
+
+    width: 100%;
+    height: 105px;
+}
+
+.logo {
+    transition: 0.2s;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(109, 108, 108);
+}
+
+.logo:hover {
+    box-shadow: 1px 1px 10px 5px black;
+}
+
+
+.icons,
+.links {
+    border: 1px solid red;
+}
+
+.icons>li,
+.links>li {
+    display: inline-block;
+    list-style: none;
+
+    /* line-height: 100px; */
+    margin-top: 50px;
+    transform: translate(0%, -50%);
+
+    font-size: 1.5em;
+
+    margin-left: 30px;
+
+    padding: 0px 15px;
+
+    border: 1px solid black;
+}
+
+.links>li:focus {
+    background-color: brown;
+}
+
+.icons>li>i {
+    cursor: pointer;
+}
+
+
+
+/* ITEMS....................................................................... */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.parent {
+    display: flex;
+}
+
+.allProducts {
+    width: 70%;
+
+    /* background-color: aqua; */
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+
+}
+
+.allProducts>li {
+    color: white;
+    position: relative;
+    list-style: none;
+
+    transition: 0.2s;
+
+    text-align: center;
+
+    width: 40%;
+    height: 22%;
+
+    background-color: rgb(65, 65, 65);
+    padding: 10px;
+
+    border-radius: 10%;
+    /* border: 1px solid black; */
+    margin-bottom: 7%;
+}
+
+.face {
+    width: 100%;
+    height: 90%;
+    /* border: 1px solid black; */
+}
+
+.featured>li {
+    list-style: none;
+}
+
+.back {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 10px;
+
+    top: 0;
+    left: 0;
+
+    transform: rotateY(90deg);
+    transition: 0.2s;
+
+    border-radius: 10%;
+
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.allProducts>li:hover .back {
+    transform: rotateY(0deg);
+}
+
+.allProducts>li .back h3 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.allProducts>li .back ul {
+    margin: 3% 0px;
+}
+
+.allProducts>li .back p {
+    margin: 10px 0px;
+}
+
+.allProducts>li:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 1px 1px 10px 15px black;
+}
+
+.MyBag {
+    /* display: none; */
+    color: rgb(250, 250, 250);
+    text-align: center;
+    width: 30%;
+    
+
+}
+
+.MyBag>h2 {
+    text-transform: capitalize;
+    margin: 20px 0px;
+    font-size: 4em;
+}
+
+.goodTable>div>.item-condition {
+    text-align: center;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+.goodTable>div>span {
+    border: 1px solid black;
+
+    background-color: rgb(80, 80, 80);
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+
+    padding: 10px 5px;
+
+}
+
+.haed-goodTable,
+.footer-goodTable,
+.body-goodTable {
+    display: grid;
+    width: auto;
+    grid-template-columns: 1fr 2fr 2fr 4fr;
+    grid-column-gap: 1px;
+
+
+}
+
+.showPrice {
+
+
+    background-color: rgb(80, 80, 80);
+    color: rgb(240, 240, 240);
+    border: 0px solid rgb(161, 159, 159);
+
+
+    font-size: 1.5em;
+    transition: 0.2s;
+
+
+    display: none;
+}
+
+.showPrice:hover {
+    box-shadow: 7px 5px 10PX 5px black;
+    transform: scale(1.2, 1.2);
+}
+
+.cover-color>h4 {
+    font-style: oblique;
+    margin-bottom: 5px;
+}
+
+.goodTable {
+    width: auto;
+    margin: 0px 0px 20px 0px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.btn-color {
+    margin-right: 10px;
+    transition: 0.2s;
+
+}
+
+.btn-color:hover {
+    color: white;
+    border: 0px solid black;
+    transform: scale(1.2, 1.2);
+}
+
+.btn-blue:hover {
+    background-color: blue;
+}
+
+.btn-red:hover {
+    background-color: red;
+}
+
+.btn-green:hover {
+    background-color: green;
+}
+
+.btn-gray:hover {
+    background-color: gray;
+}
+
+.btnAdd {
+    transition: 0.2s;
+
+}
+
+.btnAdd:hover {
+
+    transform: scale(1.2, 1.2);
+
+}
